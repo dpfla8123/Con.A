@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*reset*/
+body, ul, ol, h1, h2, p, header{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/*typography*/
+:root {
+    font-size: 62.5%; /*통상적인 브라우저에서 폰트크기를 16px이라고 본다 그래서 10px을 의미*/
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-color);
+    font-size: 1.6rem; /*10px의 1.6배 = 16px*/
+}
+
+/*colors*/
+:root {
+    --primary-color: #1C1B1B;
+}
+
+/*layouts*/
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@supports not (backdrop-filter: none) {
+    .header-container {
+    background: rgba(255, 255, 255, 0.5);
+    }
+}
